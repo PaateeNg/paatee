@@ -1,33 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~flowbite/dist/flowbite.min.css';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DM_Sans/static/DMSans-Regular.ttf") format("ttf"),
+       url("/assets/fonts/DM_Sans/static/DMSans-Regular.ttf") format("truetype"); 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --background-color: "#fff";
+}
+*{
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background-color: var(--background-color);
+  font-family: 'DM Sans', sans-serif;
 }
