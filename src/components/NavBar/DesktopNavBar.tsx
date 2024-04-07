@@ -3,13 +3,57 @@ import { Dropdown } from "flowbite-react";
 import Image from "next/image";
 
 export default function NavBar() {
+  const productsDataSet = [
+    {
+      product: "Cakes",
+      link: "#"
+    },
+    {
+      product: "Drinks",
+      link: "#"
+    },
+    {
+      product: "Venues",
+      link: "#"
+    },
+    {
+      product: "Caterers",
+      link: "#"
+    },
+    {
+      product: "Djs",
+      link: "#"
+    },
+    {
+      product: "MCs",
+      link: "#"
+    },
+    {
+      product: "Photographers",
+      link: "#"
+    },
+    {
+      product: "Party decorators",
+      link: "#"
+    },
+    {
+      product: "Vendors",
+      link: "#"
+    }
+  ];
   return (
-    <nav className="h-[100px] bg-transparent md:flex md:align-middle md:p-[32px]" >
+    <nav className="h-[100px] bg-transparent md:flex md:align-middle md:p-[32px]">
       {/* start --> logo */}
       <div className="md:ps-[32px] relative" style={{ top: "-5px" }}>
-        <Image src="/assets/img/logo.png" alt="" width={179} height={49} />
+        <Image
+          src="/assets/img/logo.png"
+          alt=""
+          width={179}
+          height={49}
+          style={{ width: "auto", height: "auto" }}
+        />
       </div>
-      
+
       {/* middle */}
       <div className="md:flex md:flex-grow md:justify-center">
         <div className="md:flex md:justify-between md:align-middle md:flex-grow max-w-[622px] mx-[32px]">
@@ -17,7 +61,13 @@ export default function NavBar() {
             label="Products"
             style={{ backgroundColor: "transparent", color: "black" }}
           >
-            <Dropdown.Item>Dashboard</Dropdown.Item>
+            {productsDataSet.map((value, index) => {
+              return (
+                <Dropdown.Item key={index}>
+                  {value.product}
+                </Dropdown.Item>
+              );
+            })}
           </Dropdown>
           <Dropdown
             label="Categories"
