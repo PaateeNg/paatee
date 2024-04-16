@@ -2,6 +2,10 @@ import NavBar from "@/components/NavBar/DesktopNavBar";
 
 export default function Contact(){
     return(
-        <NavBar/>
+        <>
+        
+            <NavBar/>
+            <h1>Welcome</h1>
+        </>
     )
 }
