@@ -16,8 +16,8 @@ const ProductCard = () => {
                     <span>2 layer fruit cake</span>
                     <span className='text-xl font-bold'>$14</span>
                 </div>
-                <div className='relative left-[1px] '>
-                    <div className='bg-gray-500 h-[40px] w-[40px] '>
+                <div className=' '>
+                    <div className='bg-black rounded-md h-[40px] w-[40px] flex items-center justify-center'>
 
                         <Image height={24} width={24} className="" src={cart} alt="" />
                     </div>
