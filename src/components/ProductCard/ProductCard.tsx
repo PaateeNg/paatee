@@ -6,7 +6,7 @@ import { StaticImageData } from 'next/image';
 const ProductCard: React.FC<{ img?: StaticImageData, category?: string, categoryBg?: string  }> = ({img, category, categoryBg}) => {
   return (
     <>
-        <div className='flex flex-col w-[360px] h-[349px] border-[#98A2B3] overflow-hidden' style={{"borderWidth": "0.2px"}}>
+        <div className='flex flex-col w-[360px] border-[#98A2B3] overflow-hidden' style={{"borderWidth": "0.2px"}}>
             <div className='relative'>
                 {
                     (img !== undefined) && 

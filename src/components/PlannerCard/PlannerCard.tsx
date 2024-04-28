@@ -27,10 +27,6 @@ const PlannerCard = () => {
                 </div>
             </div>
         </div>
-        <div>
-
-            <button className='h-[44px] w-[148px] rounded-full border border-red-400 text-red-400 font-bold p-3 mt-5 mb-5 ml-5'>See all Planners</button>
-        </div>
     </>
   )
 }

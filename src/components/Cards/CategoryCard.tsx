@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CategoryCard() {
   return (
-    <div className="relative flex flex-col align-middle md:max-w-[380px] h-[370px]">
+    <div className="relative flex flex-col align-middle md:w-[480px] h-[470px]">
       <Image src="/assets/img/category1.png" fill alt="" className="" />
       <div className="absolute flex flex-col w-full h-full">
         <div className="flex flex-grow items-center justify-center">
