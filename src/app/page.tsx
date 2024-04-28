@@ -3,19 +3,19 @@ import HomePage from "@/components/Pages/Home";
 import NavBar from "@/components/NavBar/DesktopNavBar";
 import HomeMain from "@/components/HomeMain";
 import Testimonials from "@/components/Testimonials/Testimonials";
-import ProductCard from "@/components/ProductCard/ProductCard";
+import Products from "@/components/Pages/Home/Products";
 import PlannerCard from "@/components/PlannerCard/PlannerCard";
 
 export default function Home() {
-	return (
-		<div>
-			<NavBar />
-			<HomePage />
-			<ProductCard />
-			<PlannerCard />
-			<HomeMain />
-			<Testimonials />
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+      <NavBar />
+      <HomePage />
+	  <Products/>
+      <PlannerCard />
+      <HomeMain />
+      <Testimonials />
+      <Footer />
+    </div>
+  );
 }
