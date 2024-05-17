@@ -1,11 +1,12 @@
 "use client";
-
+import Offer from "@/components/Section/Offers";
 import HomeBanner from "../../Banner/HomeBanner";
 import CategoryCards from "./CategoryCards";
+import MiniBoxes from "./MiniBoxes";
 import PlannerCards from "./PlannerCards";
 import Products from "./Products";
-
-import Testimonials from "@/components/Testimonials/Testimonials";
+import Testimonials from "./Testimonials";
+import VendorCards from "./VendorCards";
 
 
 export default function HomePage() {
@@ -13,10 +14,13 @@ export default function HomePage() {
 	<>
 	<HomeBanner/>
 	<div className="2xl:flex 2xl:flex-col 2xl:items-center">
-	<Products/>
-	<CategoryCards/>
-	<PlannerCards/>
-	<Testimonials/>
+		<MiniBoxes/>
+		<Products/>
+		<CategoryCards/>
+		<PlannerCards/>
+		<VendorCards/>
+		<Testimonials/>
+		<Offer/>
 	</div>
 	</>
 	)

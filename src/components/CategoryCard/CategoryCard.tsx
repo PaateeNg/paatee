@@ -1,12 +1,19 @@
-import Image from "next/image";
+import React from "react";
+import Image from 'next/image'
+import { StaticImageData } from "next/image";
 
-export default function CategoryCard() {
+const CategoryCard: React.FC<{ img?: StaticImageData; title?: string }> = ({
+  title = "PARTY ITEMS",
+  img = "/assets/img/partyItemsImg.png"
+}) => {
   return (
     <div className="relative flex flex-col align-middle md:w-[480px] h-[470px]">
-      <Image src="/assets/img/category1.png" fill alt="" className="" />
+      <Image src={img} alt="" height={470} width={360} style={{"width": "auto", "height": "470px", "objectFit": "cover" }}/>
       <div className="absolute flex flex-col w-full h-full">
         <div className="flex flex-grow items-center justify-center">
-          <span className="text-white text-[32px] font-[700]">Party Item</span>
+          <span className="text-white text-[32px] font-[700]">
+            {title}
+          </span>
         </div>
         <div className="pb-5 flex justify-center">
           <span className="w-[125px] h-[44px] bg-white text-black inline-flex justify-center items-center rounded-full hover:bg-slate-400 focus:bg-slate-400 cursor-pointer">
@@ -16,4 +23,6 @@ export default function CategoryCard() {
       </div>
     </div>
   );
-}
+};
+
+export default CategoryCard;

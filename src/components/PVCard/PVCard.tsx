@@ -5,7 +5,7 @@ import Image from 'next/image'
 const PlannerCard = () => {
   return (
     <>
-        <div className=' w-[454px] m-3 shadow-xl rounded-t-xl overflow-hidden'>
+        <div className=' w-[454px] m-3 shadow-md overflow-hidden' style={{borderRadius: "20px"}}>
             <Image src={planner1} height={163} width={454} alt="" />
             <div className='p-5'>
                 <div>

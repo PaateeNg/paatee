@@ -2,11 +2,11 @@ import PlannerCard from "@/components/PVCard/PVCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
-export default function PlannerCards() {
+export default function VendorCards() {
   return (
     <div className="px-[51px] my-[80px]">
       <div className="text-[24px] font-bold mb-2 px-4">
-        <span>Our Top Planners</span>
+        <span>Our Top Vendors</span>
       </div>
       <div>
         
