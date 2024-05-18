@@ -1,6 +1,7 @@
 "use client";
 import { Dropdown } from "flowbite-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NavBar() {
   const productsDataSet = [
@@ -87,12 +88,16 @@ export default function NavBar() {
             style={{ backgroundColor: "transparent", color: "black" }}
             arrowIcon={false}
           />
-          <Dropdown
-            label="Join Us"
-            style={{ backgroundColor: "transparent", color: "black" }}
-          >
-            <Dropdown.Item>Dashboard</Dropdown.Item>
-          </Dropdown>
+          <Link href="/login">
+          
+            <Dropdown
+              
+              label="Join Us"
+              style={{ backgroundColor: "transparent", color: "black" }}
+            >
+              <Dropdown.Item>Dashboard</Dropdown.Item>
+            </Dropdown>
+          </Link>
         </div>
       </div>
 

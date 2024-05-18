@@ -9,8 +9,8 @@ const Vendors = () => {
     <>
         <NavBar/>
         <VPBanner/>
-        <PlannerCard />
         <SearchBar/>
+        <PlannerCard />
         
     </>
   )
