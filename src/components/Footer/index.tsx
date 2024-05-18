@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="relative flex flex-col">
       {/* first road of footer  */}
-      <div className="md:flex md:p-[110px] border-y-2 mt-5">
+      <div className="md:flex md:p-[110px] border-y-2 pt-5">
         <span className="w-1/2">
           <Image
             src="/assets/img/Logo3.png"

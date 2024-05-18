@@ -8,13 +8,12 @@ interface PVCardProps {
     cat1?: string,
     cat2?: string,
     cat3?: string,
-    cat4?: string
 }
 
-const PVCard: React.FC<PVCardProps> = ({imgSrc = planner1, link = "", cat1, cat2, cat3, cat4}) => {
+const PVCard2: React.FC<PVCardProps> = ({imgSrc = planner1, link = "", cat1, cat2, cat3}) => {
   return (
     <>
-        <div className=' w-[454px] m-3 shadow-md overflow-hidden' style={{borderRadius: "20px"}}>
+        <div className=' w-[400px] m-3 shadow-md overflow-hidden' style={{borderRadius: "20px"}}>
             <Image src={imgSrc} height={163} width={454} alt="" />
             <div className='p-5'>
                 <div>
@@ -22,7 +21,6 @@ const PVCard: React.FC<PVCardProps> = ({imgSrc = planner1, link = "", cat1, cat2
                         {(cat1 != undefined) && <li className='bg-yellow-400 rounded-xl p-1 px-2'>{cat1}</li>}
                         {(cat2 != undefined) && <li className='bg-yellow-400 rounded-xl p-1 px-2'>{cat2}</li>}
                         {(cat3 != undefined) && <li className='bg-yellow-400 rounded-xl p-1 px-2'>{cat3}</li>}
-                        {(cat4 != undefined) && <li className='bg-yellow-400 rounded-xl p-1 px-2'>{cat4}</li>}
                     </ul>
                 </div>
                 <div className='mt-5 mb-3'>
@@ -40,4 +38,4 @@ const PVCard: React.FC<PVCardProps> = ({imgSrc = planner1, link = "", cat1, cat2
   )
 }
 
-export default PVCard
+export default PVCard2

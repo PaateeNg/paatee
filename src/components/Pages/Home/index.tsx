@@ -13,7 +13,7 @@ export default function HomePage() {
 	return (
 	<>
 	<HomeBanner/>
-	<div className="2xl:flex 2xl:flex-col 2xl:items-center">
+	<div className="2xl:flex 2xl:flex-col 2xl:items-center bg-[#f9f9f9]">
 		<MiniBoxes/>
 		<Products/>
 		<CategoryCards/>

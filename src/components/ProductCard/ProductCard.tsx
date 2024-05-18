@@ -10,7 +10,7 @@ const ProductCard: React.FC<{ img?: StaticImageData, category?: string, category
             <div className='relative'>
                 {
                     (img !== undefined) && 
-                     <Image height={267} width={360} className="" src={img} alt="" style={{"width": "auto", "height": "267px"}}/>
+                     <Image className="" src={img} alt="" style={{"width": "auto", "height": "267px"}}/>
                 }
                 {(category !== undefined) && <span className={`absolute top-4 left-5 bg-${categoryBg !== undefined ? categoryBg : 'yellow-400'}  rounded-xl p-1 px-3 font-bold`}>{category}</span>}
             </div>

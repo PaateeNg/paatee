@@ -11,8 +11,6 @@ const MiniBox: React.FC<{ img?: StaticImageData; title?: string }> = ({
       <Image
         src={img}
         alt=""
-        height={70}
-        width={99}
         style={{ width: "auto", height: "70px", objectFit: "contain" }}
       />
       <div className="flex flex-grow items-center justify-center">

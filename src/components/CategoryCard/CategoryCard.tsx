@@ -8,7 +8,7 @@ const CategoryCard: React.FC<{ img?: StaticImageData; title?: string }> = ({
 }) => {
   return (
     <div className="relative flex flex-col align-middle md:w-[480px] h-[470px]">
-      <Image src={img} alt="" height={470} width={360} style={{"width": "auto", "height": "470px", "objectFit": "cover" }}/>
+      <Image src={img} alt="" style={{"width": "auto", "height": "470px", "objectFit": "cover" }}/>
       <div className="absolute flex flex-col w-full h-full">
         <div className="flex flex-grow items-center justify-center">
           <span className="text-white text-[32px] font-[700]">

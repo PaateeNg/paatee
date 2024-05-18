@@ -15,7 +15,7 @@ const Testimonial = () => {
 					</span>
 				</div>
 				<div className="flex p-3 ">
-					<Image height={62} width={62} className="rounded-full" src={Male} alt="" />
+					<Image height={62} width={62} className="rounded-full" src={Male} alt="" style={{width: "auto", height: "auto"}} />
 					<div className="flex flex-col justify-center">
 						<span className="font-bold">Adam Smith</span>
 						<span className="text-gray-400">Webflow Developer</span>
