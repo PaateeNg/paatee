@@ -7,7 +7,11 @@ const Login = () => {
     <>
         <div className='flex'>
           <div className='bg-gray-200 flex-1 h-[45rem] flex items-center justify-center'>
+<<<<<<< HEAD
             <Image width={217} height={333} alt='login picture' src='/assets/img/login-pic.png' />
+=======
+            <Image width={217} height={333} alt='login picture'  src='/assets/img/login-pic.png' />
+>>>>>>> a25df2bb3ff37011ee441a5b7042703225abc75a
           </div>
           <div className='bg-[#f9f9f9]  flex-1 flex justify-center items-center'>
               <div className='flex flex-col items-center '>
