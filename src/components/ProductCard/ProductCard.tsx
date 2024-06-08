@@ -42,9 +42,5 @@ const ProductCard: React.FC<{ img?: StaticImageData, category?: string, category
   )
 }
 
-<<<<<<< HEAD
-export default ProductCard
-=======
 export default ProductCard
 
->>>>>>> a25df2bb3ff37011ee441a5b7042703225abc75a

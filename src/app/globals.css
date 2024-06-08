@@ -5,13 +5,14 @@
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/assets/fonts/DM_Sans/static/DMSans-Regular.ttf") format("truetype"), url("/assets/fonts/DM_Sans/static/DMSans-Bold.ttf") format("truetype") weight(bold); 
+  src: url("/assets/fonts/DM_Sans/static/DMSans-Regular.ttf") format("truetype"), url("/assets/fonts/DM_Sans/static/DMSans-Bold.ttf") format("truetype") weight(bold);
 }
 
 :root {
   --background-color: "#fff";
 }
-*{
+
+* {
   font-family: 'DM Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -23,3 +24,35 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
+@media (max-width: 1020px) {
+  .hide_md {
+    display: none;
+  }
+
+  .hide_lg {
+    display: block;
+  }
+}
+
+.scrollbar-hidden::-webkit-scrollbar{
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #EDCCDA; 
+  border-radius: 0px; 
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px; 
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
