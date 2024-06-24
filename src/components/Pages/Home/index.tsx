@@ -18,8 +18,8 @@ export default function HomePage() {
 		<Products/>
 		<CategoryCards/>
 		<PlannerCards/>
-		<VendorCards/>
-		<Testimonials/>
+		{/* <VendorCards/> */}
+		{/* <Testimonials/> */}
 		<Offer/>
 	</div>
 	</>
