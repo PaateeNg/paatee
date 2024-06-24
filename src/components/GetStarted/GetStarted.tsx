@@ -8,6 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 const GetStarted = ({title}: {title: string}) => {
 	return (
 		<>
+		
 			<div className="bg-white shadow-xl w-[591px] h-[148px] flex gap-[15px] items-center p-6 rounded-xl">
 				<div className="border w-[163px] h-[100px]">
 					<Image

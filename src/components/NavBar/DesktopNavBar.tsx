@@ -45,13 +45,13 @@ export default function NavBar() {
   return (
     <nav className="h-[90px] bg-transparent md:flex md:align-middle md:p-[32px]">
       {/* start --> logo */}
-      <div className="md:ps-[32px] relative" style={{ top: "-5px" }}>
+      <div className="border shadow-xl " >
         <Image
-          src="/assets/img/logo.png"
+          src="/assets/img/paatee-logo-2.png"
           alt=""
           width={179}
           height={49}
-          style={{ width: "auto", height: "auto", position: "relative", top: "-5px" }}
+          style={{position: "absolute", top: '0px' }}
         />
       </div>
 
