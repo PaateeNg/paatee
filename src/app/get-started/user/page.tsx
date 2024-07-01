@@ -1,16 +1,41 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar/DesktopNavBar";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const VendorStart = () => {
+
+const [data, setData] = useState({
+	
+	 firstName: "",
+	 lastName: "",
+	 email: "",
+	 phone: ""
+})
+
+const handleChange = (e : any)=>{
+	const {name, value} = e.target
+	setData({
+		...data,
+		[e.target.name]: e.target.value
+	})
+	console.log(data);
+	
+}
+const handleSubmit = (e: any)=>{
+	e.preventDefault()
+	console.log(data);
+}
+
+
+
 	return (
 		<>
 			<NavBar />
 			<div className="bg-gray-100">
 				<span className="flex item-center relative top-4 justify-center -mb-[3rem] text-[#F63D68]  text-xl font-bold mt-[2rem]">
-					Get started as a User
+					Get started as a Customer
 				</span>
 				<div className="flex flex-row-reverse m-[104px]    text-md gap-[80px] ">
 					{/* Right */}
@@ -50,12 +75,17 @@ const VendorStart = () => {
 						<span className="bg-[#FEF0C7] p-[3px] h-[40px] text-lg  rounded-full text-center">
 							Please share some personal information with us
 						</span>
-						<div className="flex flex-col">
+						
+						<form action="" className="flex flex-col">
+
 							<span className="mt-[20px] font-bold">
 								First name
 							</span>
 							<input
 								type="text"
+								name="firstName"
+								value={data.firstName}
+								onChange={handleChange}
 								placeholder="Enter first name"
 								className="rounded-xl bg-white border border-gray-300"
 							/>
@@ -64,6 +94,9 @@ const VendorStart = () => {
 							</span>
 							<input
 								type="text"
+								onChange={handleChange}
+								name="lastName"
+								value={data.lastName}
 								placeholder="Enter last name"
 								className="rounded-xl bg-white border border-gray-300"
 							/>
@@ -72,6 +105,9 @@ const VendorStart = () => {
 							</span>
 							<input
 								type="text"
+								onChange={handleChange}
+								name="email"
+								value={data.email}
 								placeholder="Enter email address"
 								className="rounded-xl bg-white border border-gray-300"
 							/>
@@ -80,17 +116,22 @@ const VendorStart = () => {
 							</span>
 							<input
 								type="text"
+								onChange={handleChange}
+								name="phone"
+								value={data.phone}
 								placeholder="Enter phone"
 								className="rounded-xl bg-white border border-gray-300"
 							/>
-							<button className=" flex items-center justify-center text-white text-lg mt-[40px] w-[229px] py-3 bg-[#F63D68] rounded-full">
+							<button onClick={handleSubmit} className=" flex items-center justify-center text-white text-lg mt-[40px] w-[229px] py-3 bg-[#F63D68] rounded-full">
 								Next{" "}
 								<FaArrowRightLong className="relative left-3" />
 							</button>
 							<hr className="bg-[#F63D68] w-[40px] h-[6px] rounded-full relative left-[50%] bottom-7" />
 							<hr className="bg-gray-400 w-[10px] h-[6px] rounded-full relative left-[60%] bottom-8" />
 							<hr className="bg-gray-400 w-[10px] h-[6px] rounded-full relative left-[65%] bottom-9" />
-						</div>
+						
+						</form>
+						
 						<hr />
 					</div>
 				</div>
