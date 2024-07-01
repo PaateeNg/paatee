@@ -4,7 +4,11 @@ const CreateNewPassword = () => {
   return (
     <>
         <div>
+<<<<<<< HEAD
+            <div className='w-[487px]  border m-5 p-5 rounded-2xl border-red-700 bg-[#ffecec] flex flex-col gap-3'>
+=======
             <div className='w-[387px]  border m-5 p-5 rounded-2xl border-red-700 bg-[#ffecec] flex flex-col gap-3'>
+>>>>>>> a25df2bb3ff37011ee441a5b7042703225abc75a
                 <span className='font-bold text-xl'>Create new Password </span>
                 <span className='text-gray-500'>You can now create a new password for your account</span>
                 <span className='mt-7'>New password</span>
