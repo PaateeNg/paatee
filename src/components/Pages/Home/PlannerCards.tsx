@@ -75,7 +75,7 @@ export default function PlannerCards() {
         <div className="flex max-w-full pt-[8px] pb-[16px] gap-[8px] overflow-x-scroll whitespace-nowrap  lg:hidden">
           {arrItems.map(data => {
               return (
-                <div className="h-[250px] max-w-[167px] w-full rounded-[8px] p-[8px]">
+                <div key={data.cat1} className="h-[250px] max-w-[167px] w-full rounded-[8px] p-[8px]">
                   <PVCardMobile
                     cat1={data.cat1}
                     cat2={data.cat2}
@@ -104,7 +104,7 @@ export default function PlannerCards() {
           >
             {arrItems.map(data => {
               return (
-                <div className="flex mb-[px]">
+                <div key={data.cat1} className="flex mb-[px]">
                   <PVCard
                     cat1={data.cat1}
                     cat2={data.cat2}
